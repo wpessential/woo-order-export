@@ -1,0 +1,75 @@
+.order_export_form input[type=text], .order_export_form select,
+.order_export_form input[type=email] {
+    width: 100%;
+    padding: 12px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.order_export_form select {
+    height: 45px;
+    margin-bottom: 6px;
+}
+
+.order_export_form label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.order_export_form input[type=submit] {
+    border: 1px solid #77d5f7 !important;
+    background: #0078ae url(../images/ui-bg_glass_45_0078ae_1x400.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.order_export_form input[type=submit]:hover {
+    background: #77d5f7 url(../images/ui-bg_glass_75_79c9ec_1x400.png) 50% 50% repeat-x;
+    border-color: #0078ae !important;
+}
+
+.order_export_form .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.order_export_form .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.order_export_form .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.order_export_form .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.order_export_form {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .order_export_form .col-25, .order_export_form .col-75, .order_export_form input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
